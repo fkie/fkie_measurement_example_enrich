@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+  <node pkg="fkie_measurement_example_enrich" exec="measurement_publisher" name="measurement_publisher">
+    <param name="device_frame" value="device_frame"/>
+    <param name="device_serial_id" type="str" value="0123456"/>
+    <param name="device_name" value="my_device"/>
+    <param name="device_classification" value="R"/>
+    <param name="sensor_name" value="test_sensor"/>
+    <param name="source_type" value="Dose"/>
+    <param name="source_unit" value="uSv/h"/>
+    <remap from="odom" to="/odom" />
+    <remap from="sub_measurement" to="/sub_measurement" />
+    <remap from="/measurement_located" to="/measurement_located" />
+  </node>
+</launch>
