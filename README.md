@@ -1,7 +1,7 @@
 # fkie_measurement_example_enrich
 
 This package contains a simple example how to create a measurement publisher.
-It is an example for the publication of the MeasurementLocated message on the Enrich.
+It is an example for the publication of the **MeasurementLocated** message ([fkie_measurement_msgs](https://github.com/fkie/fkie_measurement_msgs) package) on the Enrich.
 To create this message, a measured value and the position are required.
 In this example, the measured value is subscribed to a Float32 topic.
 
